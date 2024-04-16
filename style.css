@@ -1,0 +1,60 @@
+body{
+    
+}
+/* Общие стили */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(248, 234, 215, 0.43);
+    
+}
+h1{
+    color: green;
+    text-align: center;
+}
+i{
+    color: rgb(194, 149, 3);
+}
+a h3{
+ font-size: 1.5em;
+}
+p{
+    font-size: 1.5em;
+}
+/* Стили для экранов шире 768px */
+@media screen and (max-width: 800px) {
+    .container {
+        padding: 40px;
+    }
+    .bish, .osh, .dj, .kar, .chol, .nar, .koch, .tal {
+        width: 100%;
+        /* float: left; */
+    }
+    .bish img{
+        width: 290px;
+        
+    }
+    h1{font-size: 1.2em;}
+    a h3{
+        font-size: 1.1em;
+       }
+    p{
+        font-size: 1em;
+    }
+}
+
+/* Стили для экранов шире 1024px */
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 60px;
+    }
+}
+
+/* Стили для мобильных устройств */
+@media screen and (max-width: 767px) {
+    .bish, .osh, .dj, .kar, .chol, .nar, .koch, .tal {
+        width: 100%;
+        float: none;
+    }
+}
